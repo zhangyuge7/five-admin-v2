@@ -15,7 +15,6 @@ const router = createRouter({
   // 使用HTML5模式，正式环境服务器配置查看：https://router.vuejs.org/zh/guide/essentials/history-mode.html
   history: createWebHistory(import.meta.env.VITE_APP_BASE_PATH),
   routes: baseRoutes,
-  strict: true,
 })
 const { start, end } = usePageLoading()
 // 前置守卫
