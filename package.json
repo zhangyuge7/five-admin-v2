@@ -8,8 +8,7 @@
     "preview": "vite preview",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "clear": "rimraf node_modules"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
@@ -40,7 +39,6 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
     "postcss": "^8.4.31",
-    "rimraf": "^5.0.5",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
     "vite": "^4.5.0",
