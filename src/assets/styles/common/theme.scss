@@ -1,0 +1,250 @@
+// 默认
+:root {
+    // -----------------------------------------统一背景------------------------------------------------
+    --fv-bg:transparent; // 全背景（包括顶栏、侧栏、多标签页、主界面、页脚，需要将其它背景设置为 transparent）
+    --fv-layout-bottom-bg:transparent; // 下部分全背景（包括侧栏、多标签页、主界面、页脚，需要将其它背景设置为 transparent）
+    --fv-aside-bg: transparent; // 侧栏背景（需要将主菜单及子菜单背景设置为 transparent ）
+
+    // -----------------------------------------tabs------------------------------------------------
+    --fv-tabs-height: 35px; // tabs 高度
+    --fv-tabs-bg: #ffffff; // tabs 背景颜色
+    --fv-tabs-text-color:#303030; // tabs 内容颜色
+
+    // -----------------------------------------主界面------------------------------------------------
+    // 主界面背景颜色
+    --fv-main-page-bg: #f6f6f6;
+
+    // -----------------------------------------顶栏------------------------------------------------
+    --fv-header-height: 52px; // 顶栏高度
+    --fv-header-bg: #ffffff; // 顶栏背景颜色
+    --fv-header-text-color: #303030; // 顶栏内容颜色
+    --fv-header-border-bottom: 1px solid var(--el-border-color);
+
+    // -----------------------------------------主菜单------------------------------------------------
+    --fv-main-menu-width: auto; // 宽度(vertical有效)
+    --fv-main-menu-item-height: 60px; // 菜单项高度 (vertical有效)
+    --fv-main-menu-bg: rgb(255, 255, 255); // 背景颜色
+    --fv-main-menu-text-color: #303030; // 内容颜色
+    // --fv-main-menu-active-bg: #022648; // 激活项的背景颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: var(--el-color-primary-light-9); // 鼠标移入背景颜色
+    --fv-main-menu-item-font-size: 14px; // 内容尺寸
+    --fv-main-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+
+    // -----------------------------------------子菜单------------------------------------------------
+    --fv-sub-menu-width: 200px; // 宽度(vertical有效)
+    --fv-sub-menu-item-height: 60px; // 菜单项高度（vertical有效）
+    --fv-sub-menu-bg: rgb(255, 255, 255); // 背景颜色
+    --fv-sub-menu-text-color: #303030; // 内容颜色
+    // --fv-sub-menu-active-bg: #b8d8f6; // 激活项的背景颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: var(--el-color-primary-light-9); // 鼠标移入背景颜色
+    --fv-sub-menu-item-font-size: 14px; // 内容尺寸
+    --fv-sub-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: rgb(255, 255, 255); // 子菜单展开背景颜色
+
+    // -----------------------------------------LOGO标题------------------------------------------------
+    --fv-logo-bg: var(--fv-header-bg); // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+
+    // -----------------------------------------页脚------------------------------------------------
+    --fv-footer-heigth: 26px; // 页脚高度
+    --fv-footer-bg: var(--fv-header-bg); // 页脚背景颜色
+    --fv-footer-text-color: #474747; // 页脚文本颜色
+    --fv-footer-font-size: 16px; // 页脚字体尺寸
+    --fv-footer-border-top: 0; // 页脚上边框
+
+    // -----------------------------------------工具------------------------------------------------
+    --fv-tools-hover-bg-color: rgba(5, 106, 247, 0.103); // 鼠标移入背景
+}
+
+// 樱花粉
+html.sakura {
+    --el-color-primary: #ef4490;
+    --el-color-primary-light-3: #f47cb1;
+    --el-color-primary-light-5: #f7a2c8;
+    --el-color-primary-light-7: #fac7de;
+    --el-color-primary-light-8: #fcdae9;
+    --el-color-primary-light-9: #fdecf4;
+    --el-color-primary-dark-2: #bf3673;
+    --fv-tabs-bg: #ffeff0; // tabs 背景颜色
+    --fv-main-page-bg: #fff4f5;
+    --fv-header-bg: #f09199; // 顶栏背景颜色
+    --fv-header-text-color: #573b3b; // 顶栏内容颜色
+    --fv-header-border-bottom: 0;
+    --fv-main-menu-bg: var(--fv-header-bg); // 背景颜色
+    --fv-main-menu-text-color: var(--fv-header-text-color); // 内容颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: var(--fv-sub-menu-hover-bg-color); // 鼠标移入背景颜色
+    --fv-main-menu-border-right: 0; // 右边框 (vertical有效)
+    --fv-sub-menu-bg: #ffc4d3; // 背景颜色
+    --fv-sub-menu-text-color: #564343; // 内容颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: #d293a3; // 鼠标移入背景颜色
+    --fv-sub-menu-item-font-size: 14px; // 内容尺寸
+    --fv-sub-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: #ebaaba; // 子菜单展开背景颜色
+    --fv-logo-bg: var(--fv-header-bg); // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+    --fv-footer-bg: var(--fv-main-page-bg); // 页脚背景颜色
+    --fv-footer-text-color: #ae7272; // 页脚文本颜色
+}
+
+// 天空蓝
+html.sky {
+    --el-color-primary: #395dff;
+    --el-color-primary-light-3: #748eff;
+    --el-color-primary-light-5: #9caeff;
+    --el-color-primary-light-7: #c4ceff;
+    --el-color-primary-light-8: #d7dfff;
+    --el-color-primary-light-9: #ebefff;
+    --el-color-primary-dark-2: #2e4acc;
+    --fv-tabs-bg: #e4f8ff; // tabs 背景颜色
+    --fv-main-page-bg: #f0f9fc;
+    --fv-header-bg: #2ca9e1; // 顶栏背景颜色
+    --fv-header-text-color: #eefaff; // 顶栏内容颜色
+    --fv-header-border-bottom: 0;
+    --fv-main-menu-bg: var(--fv-header-bg); // 背景颜色
+    --fv-main-menu-text-color: var(--fv-header-text-color); // 内容颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: #198cc2; // 鼠标移入背景颜色
+    --fv-main-menu-border-right: 0; // 右边框 (vertical有效)
+    --fv-sub-menu-bg: #a0d8ef; // 背景颜色
+    --fv-sub-menu-text-color: #564343; // 内容颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: #71c6e8; // 鼠标移入背景颜色
+    --fv-sub-menu-item-font-size: 14px; // 内容尺寸
+    --fv-sub-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: #87c7e0; // 子菜单展开背景颜色
+    --fv-logo-bg: var(--fv-header-bg); // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+    --fv-footer-bg: var(--fv-main-page-bg); // 页脚背景颜色
+    --fv-footer-text-color: #4c849c; // 页脚文本颜色
+}
+
+// 草原绿
+html.grassland {
+    --el-color-primary: #3eb370;
+    --el-color-primary-light-3: #78ca9b;
+    --el-color-primary-light-5: #9fd9b8;
+    --el-color-primary-light-7: #c5e8d4;
+    --el-color-primary-light-8: #d8f0e2;
+    --el-color-primary-light-9: #ecf7f1;
+    --el-color-primary-dark-2: #328f5a;
+
+    --fv-tabs-bg: #e7fffb; // tabs 背景颜色
+    --fv-main-page-bg: #f1fffd;
+    --fv-header-bg: #00523f; // 顶栏背景颜色
+    --fv-header-text-color: #e6e6e6; // 顶栏内容颜色
+    --fv-header-border-bottom: 0;
+    --fv-main-menu-width: auto; // 宽度(vertical有效)
+    --fv-main-menu-bg: #00523f; // 背景颜色
+    --fv-main-menu-text-color: #ffffff; // 内容颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: #00624d; // 鼠标移入背景颜色
+    --fv-main-menu-border-right: 0; // 右边框 (vertical有效)
+    --fv-sub-menu-bg: #00654f; // 背景颜色
+    --fv-sub-menu-text-color: #fffefe; // 内容颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: #004a3a; // 鼠标移入背景颜色
+    --fv-sub-menu-border-right: 0; // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: #005643; // 子菜单展开背景颜色
+    --fv-logo-bg: var(--fv-header-bg); // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+    --fv-footer-bg: var(--fv-main-page-bg); // 页脚背景颜色
+    --fv-footer-text-color: #004d3b; // 页脚文本颜色
+    --fv-footer-border-top: 0; // 页脚上边框
+}
+
+// 暗黑模式
+html.dark {
+    // -----------------------------------------tabs------------------------------------------------
+    --fv-tabs-bg: #2b2d30; // tabs 背景颜色
+    --fv-tabs-text-color:#e7e7e7; // tabs 内容颜色
+
+    // -----------------------------------------主界面------------------------------------------------
+    // 主界面背景颜色
+    --fv-main-page-bg: #1e1f22;
+
+    // -----------------------------------------顶栏------------------------------------------------
+    --fv-header-bg: #2b2d30; // 顶栏背景颜色
+    --fv-header-text-color: #e7e7e7; // 顶栏内容颜色
+    --fv-header-border-bottom: 1px solid var(--el-border-color);
+
+    // -----------------------------------------侧栏配置------------------------------------------------
+    --fv-aside-bg: transparent; // 侧栏背景（需要将主菜单及子菜单背景设置为 transparent ）
+    // -----------------------------------------主菜单------------------------------------------------
+    --fv-main-menu-width: auto; // 宽度(vertical有效)
+    --fv-main-menu-bg: #2b2d30; // 背景颜色
+    --fv-main-menu-text-color: #e5e5e5; // 内容颜色
+    // --fv-main-menu-active-bg: #022648; // 激活项的背景颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: #141414; // 鼠标移入背景颜色
+    --fv-main-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+
+    // -----------------------------------------子菜单------------------------------------------------
+    --fv-sub-menu-width: 200px; // 宽度(vertical有效)
+    --fv-sub-menu-bg: #2b2d30; // 背景颜色
+    --fv-sub-menu-text-color: #e1e1e1; // 内容颜色
+    // --fv-sub-menu-active-bg: #b8d8f6; // 激活项的背景颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: #141414; // 鼠标移入背景颜色
+    --fv-sub-menu-border-right: solid 1px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: #202123; // 子菜单展开背景颜色
+
+    // -----------------------LOGO标题-----------------------------
+    --fv-logo-bg: var(--fv-header-bg); // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+
+    // -----------------------页脚-----------------------------
+    --fv-footer-bg: var(--fv-header-bg); // 页脚背景颜色
+    --fv-footer-text-color: #f0f0f0; // 页脚文本颜色
+
+    // -----------------------顶栏工具栏-----------------------------
+    --fv-tools-hover-bg-color: rgba(5, 106, 247, 0.103); // 鼠标移入背景
+
+}
+
+// 灰色模式
+html.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+// 色弱模式
+html.webkit {
+    filter: invert(80%);
+    -webkit-filter: invert(80%);
+}
+
+// 主题-幻想
+html.fantasy {
+    --fv-tabs-bg: var(--fv-main-page-bg); // tabs 背景颜色
+    --fv-main-page-bg: linear-gradient(90deg, #f7fdff, #f7f7ff, #fffafc);
+    --fv-header-bg: linear-gradient(45deg, #3b8d99, #6b6b83, #aa4b6b); // 顶栏背景颜色
+    --fv-aside-bg: linear-gradient(90deg, #fffafc, #f7f7ff, #f7fdff); // 侧栏背景（需要将主菜单及子菜单背景设置为 transparent ）
+    --fv-header-text-color: #e4e4e4; // 顶栏内容颜色
+    --fv-header-border-bottom: solid 0px rgba(94, 136, 150, 0.8);
+    --fv-main-menu-bg: transparent; // 背景颜色
+    --fv-main-menu-text-color: #5d5c5c; // 内容颜色
+    // --fv-main-menu-active-bg: #022648; // 激活项的背景颜色
+    --fv-main-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-main-menu-hover-bg-color: rgba(42, 88, 96, 0.2); // 鼠标移入背景颜色
+    --fv-main-menu-border-right: solid 0px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-bg: transparent; // 背景颜色
+    --fv-sub-menu-text-color: #5d5c5c; // 内容颜色
+    // --fv-sub-menu-active-bg: #b8d8f6; // 激活项的背景颜色
+    --fv-sub-menu-active-color: var(--el-color-primary); // 激活项的内容颜色
+    --fv-sub-menu-hover-bg-color: rgba(42, 88, 96, 0.2); // 鼠标移入背景颜色
+    --fv-sub-menu-border-right: solid 0px var(--el-menu-border-color); // 右边框 (vertical有效)
+    --fv-sub-menu-inline-bg: transparent; // 子菜单展开背景颜色
+    --fv-logo-bg: transparent; // LOGO背景
+    --fv-logo-title-color: var(--fv-header-text-color); //标题颜色
+    --fv-footer-bg: var(--fv-main-page-bg); // 页脚背景颜色
+    --fv-footer-text-color: #1e1e36; // 页脚文本颜色
+    --fv-footer-border-top: 0; // 页脚上边框
+}

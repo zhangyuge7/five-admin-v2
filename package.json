@@ -1,0 +1,51 @@
+{
+  "name": "five-admin-v2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clear": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vueuse/core": "^10.6.1",
+    "axios": "^1.6.2",
+    "cut-tree": "^1.0.0",
+    "dayjs": "^1.11.10",
+    "default-passive-events": "^2.0.0",
+    "echarts": "^5.4.3",
+    "element-plus": "^2.4.2",
+    "fuse.js": "^7.0.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.0",
+    "screenfull": "^6.0.2",
+    "vue": "^3.3.9",
+    "vue-i18n": "^9.7.1",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@iconify/vue": "^4.1.1",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.54.0",
+    "postcss": "^8.4.31",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.5.0",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue-setup-extend-plus": "^0.1.0"
+  }
+}
