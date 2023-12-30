@@ -10,9 +10,6 @@ import ThemeSwitch from '@/layout/components/ThemeSwitch.vue'
 
 const appStore = useAppStore()
 
-// 提示
-const alert = t('appConfig.hintText')
-
 // 响应式数据定义
 const state = reactive({
   showSettingDrawer: false, // 控制显示抽屉
@@ -302,7 +299,7 @@ onUnmounted(() => {
         <el-divider :size="state.size">
           {{ t('appConfig.hint') }}
         </el-divider>
-        <el-alert :title="alert" type="warning" :closable="false" />
+        <el-alert :title="t('appConfig.hintText')" type="warning" :closable="false" />
       </el-scrollbar>
     </el-drawer>
   </div>
