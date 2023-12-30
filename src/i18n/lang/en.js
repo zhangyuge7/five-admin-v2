@@ -141,7 +141,7 @@ export default {
     grayPattern: 'Grey pattern',
     tritanope: 'Color weakness pattern',
     hint: 'Tips',
-    hintText: 'The preceding configuration only supports preview, but does not persist. Refresh the browser and restore the default state. The configuration can be permanently modified in the `src/appConfig.js` file of the source code. Style configuration in `src/assets/styles/common/theme.scss` file modification',
+    hintText: 'Not all of the above configurations are persistent. If you need to persist a configuration, modify it /src/stores/modules/app.js',
   },
   // element-plus自带
   el: {

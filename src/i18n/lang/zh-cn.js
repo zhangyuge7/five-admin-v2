@@ -142,7 +142,7 @@ export default {
     grayPattern: '灰色模式',
     tritanope: '色弱模式',
     hint: '提示',
-    hintText: '以上配置只支持预览，不具备持久化，刷新浏览器后恢复默认状态。配置可以在源码的 src/appConfig.js 文件中做永久修改。样式配置在 src/assets/styles/common/theme.scss 文件中修改',
+    hintText: '以上配置不是全部都具备持久化，如果需要持久化某个配置请修改 /src/stores/modules/app.js',
   },
   // element-plus自带，复制在这里为了使用时有插件提示
   el: {

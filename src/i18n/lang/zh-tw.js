@@ -141,7 +141,7 @@ export default {
     grayPattern: '灰色模式',
     tritanope: '色弱模式',
     hint: '提示',
-    hintText: '以上配置只支持預覽，不具備持久化，刷新浏覽器後恢複默認狀態。配置可以在源碼的 src/appConfig.js 文件中做永久修改。樣式配置在 src/assets/styles/common/theme.scss 文件中修改',
+    hintText: '以上配置不是全部都具備持久化，如果需要持久化某個配置請修改 /src/stores/modules/app.js',
   },
   // elemetn-plus自带
   el: {
