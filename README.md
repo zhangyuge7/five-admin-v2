@@ -19,7 +19,7 @@
 ## 简介
 项目基于 FiveAdmin 重构。
 
-项目技术栈： JavaScript、Vue3、Vite4、Pinia、ElementPlus、Tailwindcss 等。
+项目技术栈： JavaScript、Vue3、Vite5、Pinia、ElementPlus、Tailwindcss 等。
 
 
 
@@ -34,3 +34,17 @@
 + 账号/密码：admin/admin;test/test
 
 [![zhangyuge/five-admin-v2](https://gitee.com/zhang-yuge668/five-admin-v2/widgets/widget_card.svg?colors=4183c4,ffffff,ffffff,e3e9ed,666666,9b9b9b)](https://gitee.com/zhang-yuge668/five-admin-v2)
+
+
+
+## 项目截图
+
+![](https://oscimg.oschina.net/oscnet/up-961a7a6f13737ff79541f31d030227df9fa.png)
+
+![](https://oscimg.oschina.net/oscnet/up-8a7207add56914df3d7c60f6d10c4c519e2.png)
+
+![](https://oscimg.oschina.net/oscnet/up-650c9437afa97308579ebf83400d90f6de7.png)
+
+![]( https://oscimg.oschina.net/oscnet/up-4ecb6b6db74daec86c562d75864b58f3b47.png)
+
+![](https://oscimg.oschina.net/oscnet/up-9950d6de99a3a3fdd3020a82763a2cf4bda.png)
