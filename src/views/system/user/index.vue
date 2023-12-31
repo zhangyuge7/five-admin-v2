@@ -1,6 +1,6 @@
-<script setup name="SystemUser">
+<script setup>
 import { reactive } from 'vue'
-
+defineOptions({name:'SystemUser'})
 const columns = [
   { id: 'userName', label: '用户名' },
   { id: 'nickName', label: '昵称' },

@@ -17,7 +17,7 @@
 </p>
 
 ## 简介
-项目基于 FiveAdmin 重构，FiveAdmin 已停止维护。
+项目基于 FiveAdmin 重构。
 
 项目技术栈： JavaScript、Vue3、Vite4、Pinia、ElementPlus、Tailwindcss 等。
 

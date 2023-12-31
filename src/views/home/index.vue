@@ -1,7 +1,7 @@
-<script setup name="Home">
+<script setup>
 import packagejson from '/package.json'
 import { shallowRef } from 'vue'
-
+defineOptions({name:'Home'})
 const dependencies = shallowRef([])
 const devDependencies = shallowRef([])
 

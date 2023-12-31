@@ -1,6 +1,6 @@
-<script setup name="SystemRole">
+<script setup>
 import { reactive } from 'vue'
-
+defineOptions({name:'SystemRole'})
 const columns = [
   { id: 'roleName', label: '角色名称' },
   { id: 'roleCode', label: '角色编码' },
