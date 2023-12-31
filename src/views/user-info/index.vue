@@ -1,5 +1,5 @@
 <script setup>
-defineOptions({name:'UserInfo'})
+defineOptions({ name: 'UserInfo' })
 const tableData = [
   { type: '登陆', ip: '127.0.0.1', addr: '东营', isOk: '成功' },
   { type: '登出', ip: '127.0.0.1', addr: '东营', isOk: '成功' },

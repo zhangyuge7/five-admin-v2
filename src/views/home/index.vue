@@ -1,7 +1,8 @@
 <script setup>
 import packagejson from '/package.json'
 import { shallowRef } from 'vue'
-defineOptions({name:'Home'})
+
+defineOptions({ name: 'Home' })
 const dependencies = shallowRef([])
 const devDependencies = shallowRef([])
 
@@ -24,26 +25,51 @@ Object.keys(packagejson.devDependencies).forEach((key) => {
   <el-container>
     <el-main>
       <el-row :gutter="20">
-        <el-col :span="10" :offset="0">
+        <el-col :span="12" :offset="0">
           <el-card shadow="never">
             <template #header>
               简介
             </template>
+            <h3>
+              🚀 开箱即用的前端后台管理系统模板！基于 JavaScript、Vue3、Vite5、Pinia、ElementPlus、Tailwindcss 等技术栈开发，助力你快速开发业务功能，专注与业务开发！
+            </h3>
+            <br>
+            <h3>
+              🌟 强大的功能：
+            </h3>
             <p>
-              项目基于 FiveAdmin 重构。
+              &emsp;支持现代化的路由管理和导航，方便快捷地定位页面。
             </p>
             <p>
-              使用技术栈 JavaScript、Vue3、Vite4、Pinia、ElementPlus、Tailwindcss 等。
-              为开发后台管理系统提供开箱即用的解决方案，使开发者可以轻松构建功能齐全的管理系统界面。
-              使用 FiveAdminV2，开发者可以通过简单的配置，快速搭建后台管理系统，提高开发效率。
+              &emsp;模块化开发，可快速扩展和定制化，适应不同项目需求。
+            </p>
+            <p>
+              &emsp;内置丰富的主题和布局，为你提供丰富多样的页面展示效果。
+            </p>
+            <p>
+              &emsp;强大的数据管理与状态管理，采用 Pinia 提供可靠且高效的数据流管理。
+            </p>
+            <p>
+              &emsp;基于 ElementPlus，提供美观、易用的组件库，方便快速搭建页面。
+            </p>
+            <p>
+              &emsp;使用 Tailwindcss 作为 CSS 工具库，简化界面样式的开发与调整。
             </p>
             <br>
+            <h3>
+              👩‍💻 简化你的开发流程：
+            </h3>
+            <p>&emsp;利用 Vue3 进行开发，享受响应式的开发体验。</p>
+            <p>&emsp;使用 Vite5 作为开发服务器，实现更快的热重载和开发效率。</p>
+            <p>&emsp;使用 PNPM 管理依赖，保证项目的稳定性和可维护性的。</p>
+            <br>
+            <p>✨ 轻松上手，高效开发，无需花费大量时间和精力，通过简单的配置即可创建出精致的管理系统。</p>
             <p>
-              使用过程中如果有好的建议，欢迎指教。
+              💼 适用于各类企业内部管理系统、后台管理系统、数据管理系统等场景。
             </p>
           </el-card>
         </el-col>
-        <el-col :span="14" :offset="0">
+        <el-col :span="12" :offset="0">
           <el-card shadow="never">
             <template #header>
               <div>
