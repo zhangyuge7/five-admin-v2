@@ -2,7 +2,8 @@
 <script setup>
 import * as echarts from 'echarts'
 import { onMounted, reactive } from 'vue'
-defineOptions({name:'Workbench'})
+
+defineOptions({ name: 'Workbench' })
 const state = reactive({
   tableLoading: false,
   hotProductList: [],

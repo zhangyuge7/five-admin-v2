@@ -1,7 +1,8 @@
 <script setup>
 import screenfull from 'screenfull'
 import { computed, ref } from 'vue'
-defineOptions({name:'FullScreen'})
+
+defineOptions({ name: 'FullScreen' })
 const isFullscreen = ref(screenfull.isFullscreen)
 const text = computed(() => isFullscreen.value ? '退出全屏' : '全屏此元素')
 

@@ -1,16 +1,18 @@
 {
-    "prettier.enable": false,
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    "i18n-ally.localesPaths": [
-        "src/i18n/lang",
-        "src/i18n/pages/**"
-    ],
-    "i18n-ally.enabledParsers": ["js"], // 翻译支持的语言文件格式
-    "i18n-ally.encoding": "utf-8", // 翻译文件的编码
-    "i18n-ally.sourceLanguage": "zh-cn", // 根据此 cn 语言文件翻译其他语言文件的 变量和内容
-    "i18n-ally.displayLanguage": "zh-cn", // 组件中显示的语言
-    "i18n-ally.keystyle": "flat", // 翻译后变量的格式, flat(扁平式即对象属性路径变成一个长字符串), nested(嵌套式即对象属性变量可以进行相互之间的嵌套)
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "i18n-ally.localesPaths": [
+    "src/i18n/lang",
+    "src/i18n/pages/**"
+  ],
+  "i18n-ally.enabledParsers": [
+    "js"
+  ], // 翻译支持的语言文件格式
+  "i18n-ally.encoding": "utf-8", // 翻译文件的编码
+  "i18n-ally.sourceLanguage": "zh-cn", // 根据此 cn 语言文件翻译其他语言文件的 变量和内容
+  "i18n-ally.displayLanguage": "zh-cn", // 组件中显示的语言
+  "i18n-ally.keystyle": "flat" // 翻译后变量的格式, flat(扁平式即对象属性路径变成一个长字符串), nested(嵌套式即对象属性变量可以进行相互之间的嵌套)
 }

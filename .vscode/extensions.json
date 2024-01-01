@@ -1,11 +1,11 @@
 {
   "recommendations": [
-    "Vue.volar", 
+    "Vue.volar",
     "dbaeumer.vscode-eslint",
     "lokalise.i18n-ally",
     "antfu.iconify",
     "mikestead.dotenv",
     "bradlc.vscode-tailwindcss",
-    "jingwang37.element-plus-snippets",
+    "jingwang37.element-plus-snippets"
   ]
 }

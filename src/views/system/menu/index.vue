@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue'
-defineOptions({name:'SystemMenu'})
+
+defineOptions({ name: 'SystemMenu' })
 const columns = [
   { id: 'menuName', label: '菜单名称' },
   { id: 'sort', label: '排序' },

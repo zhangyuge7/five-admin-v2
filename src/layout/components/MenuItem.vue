@@ -1,5 +1,6 @@
 <script setup>
 import SvgIcon from '@/components/svg-icon/index.vue'
+
 const props = defineProps({
   routes: {
     type: Array,

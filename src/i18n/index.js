@@ -32,7 +32,7 @@ function getLocale() {
   return sysGlobalConfig.defaultLanguage
 }
 // 翻译文件中不存在该键时的警告处理
-function warnHandler(missingKey, vm, locale, missing) {
+function warnHandler() {
   // console.warn(`${vm}`)
 }
 // 创建 i18n

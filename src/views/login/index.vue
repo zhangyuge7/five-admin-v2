@@ -3,7 +3,6 @@ import { onMounted, onUnmounted, reactive } from 'vue'
 import { useUserStore } from '@/stores/modules/user'
 import router from '@/router'
 
-const title = import.meta.env.VITE_APP_TITLE
 const useUser = useUserStore()
 
 const state = reactive({

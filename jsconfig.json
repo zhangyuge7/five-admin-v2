@@ -1,15 +1,14 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "baseUrl": ".",
-        "paths": {
-          "@/*": ["src/*"]
-        },
-        "target": "ES6",
-        "module": "commonjs",
-        "allowSyntheticDefaultImports": true
-      },
-      "include": ["src/**/*"],
-      "exclude": ["node_modules"]
-    
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
