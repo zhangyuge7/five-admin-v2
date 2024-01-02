@@ -9,12 +9,12 @@ const messages = {
   'zh-tw': {},
 }
 // 导入./lang目录语言文件
-const langs = import.meta.glob('./lang/*.js', {
+const langs = import.meta.glob('./lang/*.json', {
   import: 'default',
   eager: true,
 })
 // 导入./pages目录语言文本
-const pages = import.meta.glob('./pages/**/*.js', {
+const pages = import.meta.glob('./pages/**/*.json', {
   import: 'default',
   eager: true,
 })

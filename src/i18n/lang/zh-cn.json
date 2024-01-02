@@ -1,0 +1,307 @@
+{
+  "menus": {
+      "home": "首页",
+      "dashboard": "仪表盘",
+      "analysis": "分析页",
+      "workbench": "工作台",
+      "demo": "演示",
+      "externalLink": "外部链接",
+      "vuedocs": "vue文档",
+      "iframeLink": "外部链接内嵌",
+      "bilibili": "哔哩哔哩",
+      "dataBigScreen": "数据大屏",
+      "dataBigScreen1": "数据大屏1",
+      "dataBigScreen2": "数据大屏2",
+      "permission": "权限控制",
+      "permissionButton": "按钮权限",
+      "permissionPage": "页面权限",
+      "pageKeep": "页面缓存",
+      "hasKeep": "有缓存",
+      "notKeep": "不缓存",
+      "mitt": "全局事件总线",
+      "fullScreen": "全屏示例",
+      "personalCenter": "个人中心",
+      "sysManage": "系统管理",
+      "menuManage": "菜单管理",
+      "userManage": "用户管理",
+      "roleManage": "角色管理"
+  },
+  "tools": {
+      "refresh": "刷新",
+      "fullScreen": "全屏",
+      "exitFullScreen": "退出全屏",
+      "theme": "主题",
+      "setting": "应用配置",
+      "navSearch": "导航搜索"
+  },
+  "user": {
+      "personalCenter": "个人中心",
+      "logout": "退出登录",
+      "login": "登录",
+      "register": "注册"
+  },
+  "size": {
+      "large": "大",
+      "small": "小",
+      "default": "默认"
+  },
+  "tabs": {
+      "refresh": "刷新",
+      "closeLeft": "关闭左侧",
+      "closeRight": "关闭右侧",
+      "close": "关闭当前",
+      "closeOther": "关闭其它",
+      "closeAll": "关闭所有",
+      "largeScreen": "大屏"
+  },
+  "button": {
+      "add": "新增",
+      "del": "删除",
+      "edit": "编辑",
+      "query": "查询",
+      "reset": "重置",
+      "export": "导出",
+      "import": "导入",
+      "select": "选择",
+      "update": "上传",
+      "download": "下载"
+  },
+  "http": {
+      "error": "错误",
+      "success": "成功",
+      "error401": "登录信息过期",
+      "error403": "无权限",
+      "error404": "资源找不到",
+      "error500": "服务器内部错误"
+  },
+  "app": {
+      "loginSuccess": "登录成功",
+      "welcome": "欢迎回来"
+  },
+  "messageBox": {
+      "hint": "提示",
+      "iKnow": "我知道了",
+      "close": "关闭"
+  },
+  "appConfig": {
+      "applicationConfig": "应用配置",
+      "layoutConfig": "布局配置",
+      "layout1": "单",
+      "layoutElTitle1": "单侧栏",
+      "layout2": "双",
+      "layoutElTitle2": "双侧栏",
+      "layout3": "横",
+      "layoutElTitle3": "横向上下布局",
+      "layout4": "混",
+      "layoutElTitle4": "混合导航",
+      "theme": "主题",
+      "showLogo": "显示logo",
+      "logoBackgroundColor": "logo背景",
+      "titleColor": "标题颜色",
+      "headerConfig": "顶栏配置",
+      "headerBackgroundColor": "顶栏背景",
+      "headerTextColor": "顶栏文本",
+      "headerHeight": "顶栏高度",
+      "sideConfig": "侧栏配置",
+      "collapse": "是否折叠",
+      "collapseAnimation": "折叠动画",
+      "primaryTitle": "主栏标题",
+      "sideBackgroundColor": "侧栏背景",
+      "sideWidth": "侧栏宽度",
+      "primaryWidth": "主栏宽度",
+      "contentHeight": "内容高度",
+      "menuConfig": "菜单配置",
+      "uniqueOpened": "仅开一个",
+      "menuTextColor": "菜单内容",
+      "hoverBackgroundColor": "移入背景",
+      "activateTextColor": "激活内容",
+      "expansionBackgroundColor": "展开背景",
+      "tabsConfig": "多标签页",
+      "openTabs": "开启",
+      "showIcon": "显示图标",
+      "uniqueFixed": "固定唯一",
+      "uniqueFixedHint": "当所有路由的 meta.fixedTab 不为 true 时，始终保持有一个 tab 不可关闭",
+      "tabsStyle": "tabs风格",
+      "tabsStyleOptions1": "风格一",
+      "tabsStyleOptions2": "风格二",
+      "tabsStyleOptions3": "风格三",
+      "tabsHeight": "高度",
+      "transitionAnimationConfig": "过渡动画",
+      "openAnimation": "开启",
+      "animationStyle": "动画效果",
+      "pageFooterConfig": "页脚配置",
+      "showFooter": "显示页脚",
+      "footerBackgroundColor": "页脚背景",
+      "footerTextColor": "页脚文本",
+      "footerHeight": "页脚高度",
+      "footerText": "页脚内容",
+      "footerTextHint": "可以使用多语言模板内容",
+      "otherConfig": "其他设置",
+      "openMainPageBackToTop": "开启主界面回到顶部",
+      "grayPattern": "灰色模式",
+      "tritanope": "色弱模式",
+      "hint": "提示",
+      "hintText": "以上配置不是全部都具备持久化，如果需要持久化某个配置请修改 /src/stores/modules/app.js"
+  },
+  "el": {
+      "colorpicker": {
+          "confirm": "确定",
+          "clear": "清空",
+          "defaultLabel": "色彩选择器",
+          "description": "目前色彩为 {color}。按一下 Enter 以选择新色彩。"
+      },
+      "datepicker": {
+          "now": "此刻",
+          "today": "今天",
+          "cancel": "取消",
+          "clear": "清空",
+          "confirm": "确定",
+          "dateTablePrompt": "使用方向键与 Enter 键以选择日期",
+          "monthTablePrompt": "使用方向键与 Enter 键以选择月份",
+          "yearTablePrompt": "使用方向键与 Enter 键以选择年份",
+          "selectedDate": "已選日期",
+          "selectDate": "选择日期",
+          "selectTime": "选择时间",
+          "startDate": "开始日期",
+          "startTime": "开始时间",
+          "endDate": "结束日期",
+          "endTime": "结束时间",
+          "prevYear": "前一年",
+          "nextYear": "后一年",
+          "prevMonth": "上个月",
+          "nextMonth": "下个月",
+          "year": "年",
+          "month1": "1 月",
+          "month2": "2 月",
+          "month3": "3 月",
+          "month4": "4 月",
+          "month5": "5 月",
+          "month6": "6 月",
+          "month7": "7 月",
+          "month8": "8 月",
+          "month9": "9 月",
+          "month10": "10 月",
+          "month11": "11 月",
+          "month12": "12 月",
+          "weeks": {
+              "sun": "日",
+              "mon": "一",
+              "tue": "二",
+              "wed": "三",
+              "thu": "四",
+              "fri": "五",
+              "sat": "六"
+          },
+          "weeksFull": {
+              "sun": "星期日",
+              "mon": "星期一",
+              "tue": "星期二",
+              "wed": "星期三",
+              "thu": "星期四",
+              "fri": "星期五",
+              "sat": "星期六"
+          },
+          "months": {
+              "jan": "一月",
+              "feb": "二月",
+              "mar": "三月",
+              "apr": "四月",
+              "may": "五月",
+              "jun": "六月",
+              "jul": "七月",
+              "aug": "八月",
+              "sep": "九月",
+              "oct": "十月",
+              "nov": "十一月",
+              "dec": "十二月"
+          }
+      },
+      "inputNumber": {
+          "decrease": "减少数值",
+          "increase": "增加数值"
+      },
+      "select": {
+          "loading": "加载中",
+          "noMatch": "无匹配数据",
+          "noData": "无数据",
+          "placeholder": "请选择"
+      },
+      "dropdown": {
+          "toggleDropdown": "切换下拉选单"
+      },
+      "cascader": {
+          "noMatch": "无匹配数据",
+          "loading": "加载中",
+          "placeholder": "请选择",
+          "noData": "暂无数据"
+      },
+      "pagination": {
+          "goto": "前往",
+          "pagesize": "条/页",
+          "total": "共 {total} 条",
+          "pageClassifier": "页",
+          "page": "页",
+          "prev": "上一页",
+          "next": "下一页",
+          "currentPage": "第 {pager} 页",
+          "prevPages": "向前 {pager} 页",
+          "nextPages": "向后 {pager} 页",
+          "deprecationWarning": "你使用了一些已被废弃的用法，请参考 el-pagination 的官方文档"
+      },
+      "dialog": {
+          "close": "关闭此对话框"
+      },
+      "drawer": {
+          "close": "关闭此对话框"
+      },
+      "messagebox": {
+          "title": "提示",
+          "confirm": "确定",
+          "cancel": "取消",
+          "error": "输入的数据不合法!",
+          "close": "关闭此对话框"
+      },
+      "upload": {
+          "deleteTip": "按 delete 键可删除",
+          "delete": "删除",
+          "preview": "查看图片",
+          "continue": "继续上传"
+      },
+      "slider": {
+          "defaultLabel": "滑杆介于 {min} 至 {max}",
+          "defaultRangeStartLabel": "选择起始值",
+          "defaultRangeEndLabel": "选择结束值"
+      },
+      "table": {
+          "emptyText": "暂无数据",
+          "confirmFilter": "筛选",
+          "resetFilter": "重置",
+          "clearFilter": "全部",
+          "sumText": "合计"
+      },
+      "tree": {
+          "emptyText": "暂无数据"
+      },
+      "transfer": {
+          "noMatch": "无匹配数据",
+          "noData": "无数据",
+          "titles": [
+              "列表 1",
+              "列表 2"
+          ],
+          "filterPlaceholder": "请输入搜索内容",
+          "noCheckedFormat": "共 {total} 项",
+          "hasCheckedFormat": "已选 {checked}/{total} 项"
+      },
+      "image": {
+          "error": "加载失败"
+      },
+      "pageHeader": {
+          "title": "返回"
+      },
+      "popconfirm": {
+          "confirmButtonText": "确定",
+          "cancelButtonText": "取消"
+      }
+  }
+}

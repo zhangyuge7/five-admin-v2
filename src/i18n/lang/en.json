@@ -1,0 +1,307 @@
+{
+  "menus": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "analysis": "Analysis",
+      "workbench": "Workbench",
+      "demo": "Demo",
+      "externalLink": "External Link",
+      "vuedocs": "Vue Docs",
+      "iframeLink": "Iframe Link",
+      "bilibili": "Bilibili",
+      "dataBigScreen": "Data Big Screen",
+      "dataBigScreen1": "Data Big Screen1",
+      "dataBigScreen2": "Data Big Scree2",
+      "permission": "Permission",
+      "permissionButton": "Button Permission",
+      "permissionPage": "Pag Permission",
+      "pageKeep": "Page Keep",
+      "hasKeep": "Has Keep",
+      "notKeep": "Not Keep",
+      "mitt": "Mitt",
+      "fullScreen": "Full Screen Demo",
+      "personalCenter": "Personal Center",
+      "sysManage": "System Manage",
+      "menuManage": "Menu Manage",
+      "userManage": "User Manage",
+      "roleManage": "Role Manage"
+  },
+  "tools": {
+      "refresh": "Refresh",
+      "fullScreen": "Full Screen",
+      "exitFullScreen": "Exit Full Screen",
+      "theme": "Theme",
+      "setting": "App Setting",
+      "navSearch": "Nav Search"
+  },
+  "user": {
+      "personalCenter": "Personal Center",
+      "logout": "Logout",
+      "login": "Login",
+      "register": "Register"
+  },
+  "size": {
+      "large": "large",
+      "small": "small",
+      "default": "default"
+  },
+  "tabs": {
+      "refresh": "Refresh",
+      "close": "Close",
+      "closeLeft": "Close Left",
+      "closeRight": "Close Right",
+      "closeOther": "Close Other",
+      "closeAll": "Close All",
+      "largeScreen": "Large Screen"
+  },
+  "button": {
+      "add": "Add",
+      "del": "Delete",
+      "edit": "Edit",
+      "query": "Query",
+      "reset": "Reset",
+      "export": "Export",
+      "import": "Import",
+      "select": "Select",
+      "update": "Update",
+      "download": "Download"
+  },
+  "http": {
+      "error": "Error",
+      "success": "Success",
+      "error401": "Login Expired",
+      "error403": "No Permission",
+      "error404": "Resource not found",
+      "error500": "Server internal error"
+  },
+  "app": {
+      "loginSuccess": "Login Success",
+      "welcome": "Welcome"
+  },
+  "messageBox": {
+      "hint": "Hint",
+      "iKnow": "I Know",
+      "close": "Close"
+  },
+  "appConfig": {
+      "applicationConfig": "App Setting",
+      "layoutConfig": "Layout Settings",
+      "layout1": "S",
+      "layoutElTitle1": "Unilateral Sidebar",
+      "layout2": "D",
+      "layoutElTitle2": "Double Sidebar",
+      "layout3": "H",
+      "layoutElTitle3": "Horizontal Up And Down Layout",
+      "layout4": "M",
+      "layoutElTitle4": "Mixed Mavigation",
+      "theme": "Theme Settings",
+      "showLogo": "Display Logo",
+      "logoBackgroundColor": "Logo Background",
+      "titleColor": "Title Color",
+      "headerConfig": "Header Config",
+      "headerBackgroundColor": "Header Background",
+      "headerTextColor": "Header Text",
+      "headerHeight": "Header Height",
+      "sideConfig": "Side Settings",
+      "collapse": "Fold Or Not",
+      "collapseAnimation": "Folding Aimation",
+      "primaryTitle": "Main Field Title",
+      "sideBackgroundColor": "Sidebar Background",
+      "sideWidth": "Sidebar Width",
+      "primaryWidth": "Main Field Width",
+      "contentHeight": "Content Height",
+      "menuConfig": "Menu Settings",
+      "uniqueOpened": "Unique Openede",
+      "menuTextColor": "Menu Text Color",
+      "hoverBackgroundColor": "Move Into Background",
+      "activateTextColor": "Active Content Color",
+      "expansionBackgroundColor": "Expansion Background",
+      "tabsConfig": "Multitab Page",
+      "openTabs": "Opened Tabs",
+      "showIcon": "Display Icon",
+      "uniqueFixed": "Fixed Uniqu",
+      "uniqueFixedHint": "When meta.fixedTab of all routes is not true, one tab cannot be closed",
+      "tabsStyle": "Tabs Style",
+      "tabsStyleOptions1": "one",
+      "tabsStyleOptions2": "two",
+      "tabsStyleOptions3": "three",
+      "tabsHeight": "Tabs Height",
+      "transitionAnimationConfig": "Transition Animation",
+      "openAnimation": "Opened Animation",
+      "animationStyle": "Animation Style",
+      "pageFooterConfig": "Footer Settings",
+      "showFooter": "Display footer",
+      "footerBackgroundColor": "Footer Background",
+      "footerTextColor": "Footer Text",
+      "footerHeight": "Footer Height",
+      "footerText": "Footer Content",
+      "footerTextHint": "You can use multilingual template content",
+      "otherConfig": "Other Settings",
+      "openMainPageBackToTop": "Open the main screen back to the top",
+      "grayPattern": "Grey pattern",
+      "tritanope": "Color weakness pattern",
+      "hint": "Tips",
+      "hintText": "Not all of the above configurations are persistent. If you need to persist a configuration, modify it /src/stores/modules/app.js"
+  },
+  "el": {
+      "colorpicker": {
+          "confirm": "OK",
+          "clear": "Clear",
+          "defaultLabel": "color picker",
+          "description": "current color is {color}. press enter to select a new color."
+      },
+      "datepicker": {
+          "now": "Now",
+          "today": "Today",
+          "cancel": "Cancel",
+          "clear": "Clear",
+          "confirm": "OK",
+          "dateTablePrompt": "Use the arrow keys and enter to select the day of the month",
+          "monthTablePrompt": "Use the arrow keys and enter to select the month",
+          "yearTablePrompt": "Use the arrow keys and enter to select the year",
+          "selectedDate": "Selected date",
+          "selectDate": "Select date",
+          "selectTime": "Select time",
+          "startDate": "Start Date",
+          "startTime": "Start Time",
+          "endDate": "End Date",
+          "endTime": "End Time",
+          "prevYear": "Previous Year",
+          "nextYear": "Next Year",
+          "prevMonth": "Previous Month",
+          "nextMonth": "Next Month",
+          "year": "",
+          "month1": "January",
+          "month2": "February",
+          "month3": "March",
+          "month4": "April",
+          "month5": "May",
+          "month6": "June",
+          "month7": "July",
+          "month8": "August",
+          "month9": "September",
+          "month10": "October",
+          "month11": "November",
+          "month12": "December",
+          "weeks": {
+              "sun": "Sun",
+              "mon": "Mon",
+              "tue": "Tue",
+              "wed": "Wed",
+              "thu": "Thu",
+              "fri": "Fri",
+              "sat": "Sat"
+          },
+          "weeksFull": {
+              "sun": "Sunday",
+              "mon": "Monday",
+              "tue": "Tuesday",
+              "wed": "Wednesday",
+              "thu": "Thursday",
+              "fri": "Friday",
+              "sat": "Saturday"
+          },
+          "months": {
+              "jan": "Jan",
+              "feb": "Feb",
+              "mar": "Mar",
+              "apr": "Apr",
+              "may": "May",
+              "jun": "Jun",
+              "jul": "Jul",
+              "aug": "Aug",
+              "sep": "Sep",
+              "oct": "Oct",
+              "nov": "Nov",
+              "dec": "Dec"
+          }
+      },
+      "inputNumber": {
+          "decrease": "decrease number",
+          "increase": "increase number"
+      },
+      "select": {
+          "loading": "Loading",
+          "noMatch": "No matching data",
+          "noData": "No data",
+          "placeholder": "Select"
+      },
+      "dropdown": {
+          "toggleDropdown": "Toggle Dropdown"
+      },
+      "cascader": {
+          "noMatch": "No matching data",
+          "loading": "Loading",
+          "placeholder": "Select",
+          "noData": "No data"
+      },
+      "pagination": {
+          "goto": "Go to",
+          "pagesize": "/page",
+          "total": "Total {total}",
+          "pageClassifier": "",
+          "page": "Page",
+          "prev": "Go to previous page",
+          "next": "Go to next page",
+          "currentPage": "page {pager}",
+          "prevPages": "Previous {pager} pages",
+          "nextPages": "Next {pager} pages",
+          "deprecationWarning": "Deprecated usages detected, please refer to the el-pagination documentation for more details"
+      },
+      "dialog": {
+          "close": "Close this dialog"
+      },
+      "drawer": {
+          "close": "Close this dialog"
+      },
+      "messagebox": {
+          "title": "Message",
+          "confirm": "OK",
+          "cancel": "Cancel",
+          "error": "Illegal input",
+          "close": "Close this dialog"
+      },
+      "upload": {
+          "deleteTip": "press delete to remove",
+          "delete": "Delete",
+          "preview": "Preview",
+          "continue": "Continue"
+      },
+      "slider": {
+          "defaultLabel": "slider between {min} and {max}",
+          "defaultRangeStartLabel": "pick start value",
+          "defaultRangeEndLabel": "pick end value"
+      },
+      "table": {
+          "emptyText": "No Data",
+          "confirmFilter": "Confirm",
+          "resetFilter": "Reset",
+          "clearFilter": "All",
+          "sumText": "Sum"
+      },
+      "tree": {
+          "emptyText": "No Data"
+      },
+      "transfer": {
+          "noMatch": "No matching data",
+          "noData": "No data",
+          "titles": [
+              "List 1",
+              "List 2"
+          ],
+          "filterPlaceholder": "Enter keyword",
+          "noCheckedFormat": "{total} items",
+          "hasCheckedFormat": "{checked}/{total} checked"
+      },
+      "image": {
+          "error": "FAILED"
+      },
+      "pageHeader": {
+          "title": "Back"
+      },
+      "popconfirm": {
+          "confirmButtonText": "Yes",
+          "cancelButtonText": "No"
+      }
+  }
+}

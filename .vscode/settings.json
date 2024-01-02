@@ -9,7 +9,7 @@
     "src/i18n/pages/**"
   ],
   "i18n-ally.enabledParsers": [
-    "js"
+    "json"
   ], // 翻译支持的语言文件格式
   "i18n-ally.encoding": "utf-8", // 翻译文件的编码
   "i18n-ally.sourceLanguage": "zh-cn", // 根据此 cn 语言文件翻译其他语言文件的 变量和内容
