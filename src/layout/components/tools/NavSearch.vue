@@ -32,7 +32,16 @@ function onShowClick() {
 
 function onActive(path) {
   dialogVisible.value = false
-  router.push(path)
+  if (path.startsWith('http:') || path.startsWith('https:')) {
+    const paths = path.split(',')
+    if (paths.length > 1)
+      window.open(paths[0], paths[1])
+    else
+      window.open(paths[0])
+  }
+  else {
+    router.push(path)
+  }
 }
 function initScrollEl() {
   const outerEl = document.getElementById('result_list')
