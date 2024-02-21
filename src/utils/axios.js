@@ -2,6 +2,7 @@ import axios from 'axios'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { FiveNProgress } from '@/utils/nprogress'
 import { useRouteStore } from '@/stores/modules/route'
+import { useUserStore } from '@/stores/modules/user'
 import { t } from '@/i18n'
 
 import router from '@/router'
@@ -49,6 +50,7 @@ axiosInstance.interceptors.request.use((config) => {
 // 响应拦截器
 axiosInstance.interceptors.response.use((res) => {
   const routeStore = useRouteStore()
+  const userStore = useUserStore()
   const { setToken } = useAuth()
   const { data, config } = res
   // 获取请求时配置的成功消息提示类型与错误消息提示类型
@@ -61,6 +63,7 @@ axiosInstance.interceptors.response.use((res) => {
       case 401:
         setToken()
         routeStore.$reset()
+        userStore.userInfo = null
         router.push('/login')
         break
     }
@@ -78,6 +81,7 @@ axiosInstance.interceptors.response.use((res) => {
   }
 
   const routeStore = useRouteStore()
+  const userStore = useUserStore()
   const { setToken } = useAuth()
   const { status, statusText, data } = err.response
   let message = data[resultProp.message]
@@ -86,6 +90,7 @@ axiosInstance.interceptors.response.use((res) => {
       message = message || t('http.error401')
       setToken()
       routeStore.$reset()
+      userStore.userInfo = null
       router.push('/login')
       break
     case 403:
