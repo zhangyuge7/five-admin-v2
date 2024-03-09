@@ -109,7 +109,7 @@ onUnmounted(() => {
             {{ t('appConfig.headerHeight') }}
           </el-text>
           <el-input-number
-            :model-value="state.headerHeight"
+            v-model="state.headerHeight"
             :size="state.size"
             controls-position="right"
             @change="methods.updateSizeCssValue($event, '--fv-header-height')"
@@ -154,7 +154,7 @@ onUnmounted(() => {
             {{ t('appConfig.sideWidth') }}
           </el-text>
           <el-input-number
-            :model-value="state.menuWidth"
+            v-model="state.menuWidth"
             :size="state.size"
             controls-position="right"
             :disabled="appStore.appConfig.menuIsCollapse || appStore.appConfig.layoutType === 'crosswise'"
@@ -216,7 +216,7 @@ onUnmounted(() => {
             {{ t('appConfig.tabsHeight') }}
           </el-text>
           <el-input-number
-            :model-value="state.tabsHeight"
+            v-model="state.tabsHeight"
             :size="state.size"
             controls-position="right"
             :disabled="!appStore.appConfig.isTabs"
@@ -267,7 +267,7 @@ onUnmounted(() => {
             {{ t('appConfig.footerHeight') }}
           </el-text>
           <el-input-number
-            :model-value="state.footerHeight"
+            v-model="state.footerHeight"
             :size="state.size"
             controls-position="right"
             :disabled="!appStore.appConfig.showFooter"
