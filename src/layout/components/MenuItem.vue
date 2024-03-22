@@ -29,7 +29,9 @@ function openLink(path) {
         <el-icon v-if="route.meta?.icon">
           <SvgIcon :name="route.meta.icon" />
         </el-icon>
-        <span v-if="route.meta?.title">{{ $t(route.meta.title) }}</span>
+        <span v-if="route.meta?.title" style="text-overflow: ellipsis;overflow: hidden;">
+          {{ $t(route.meta.title) }}
+        </span>
       </template>
       <MenuItem :routes="route.children" />
     </el-sub-menu>
@@ -38,7 +40,9 @@ function openLink(path) {
         <SvgIcon :name="route.meta.icon" />
       </el-icon>
       <template v-if="route.meta?.title" #title>
-        {{ $t(route.meta.title) }}
+        <span style="text-overflow: ellipsis;overflow: hidden;">
+          {{ $t(route.meta.title) }}
+        </span>
       </template>
     </el-menu-item>
   </template>
