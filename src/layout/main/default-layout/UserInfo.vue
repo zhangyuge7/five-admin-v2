@@ -24,7 +24,7 @@ function command(flag) {
   <div class="pl-5 pr-5 flex items-center">
     <el-dropdown :trigger="appConfig.trigger" @visible-change="visible = $event" @command="command">
       <span class="el-dropdown-link  text-[16px]">
-        <el-avatar class="mr-3" :src="userStore.userInfo?.avatar || 'default-avatar.png'" />
+        <el-avatar class="mr-3" :src="userStore.userInfo?.avatar || '/default-avatar.png'" />
         {{ userStore.userInfo?.nickName }}
         <el-icon class="el-icon--right ">
           <Transition name="scale" mode="out-in">
