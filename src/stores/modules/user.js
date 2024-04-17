@@ -15,7 +15,9 @@ export const useUserStore = defineStore('user', () => {
 
   // 登录
   async function login(form, replacePath = '/') {
-    const { data } = await loginApi(form)
+    const { data, ok } = await loginApi(form)
+    if (!ok)
+      return
     token.value = data.token
     await router.replace(replacePath)
     ElNotification({

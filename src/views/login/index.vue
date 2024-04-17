@@ -16,7 +16,13 @@ const state = reactive({
 const methods = {
   async onSubmit() {
     state.loginLoading = true
-    await useUser.login({ ...state.form }, router.currentRoute.value.query.replace || '/')
+    try {
+      await useUser.login({ ...state.form }, router.currentRoute.value.query.replace || '/')
+    }
+    catch (error) {
+
+    }
+
     state.loginLoading = false
   },
   enterKey(event) {
