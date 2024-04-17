@@ -29,11 +29,11 @@ export default function useAuth() {
       return false
     const { roles } = userStore.userInfo
     if (typeof (val) === 'string') {
-      const arr = roles.filter(role => match(val, role))
+      const arr = roles.filter(role => match(val, role) || match(role, val))
       return !!arr?.length
     }
     else if (Array.isArray(val)) {
-      const arr = roles.filter(role => !!val.filter(v1 => match(v1, role)).length)
+      const arr = roles.filter(role => !!val.filter(v1 => match(v1, role) || match(role, v1)).length)
       return !!arr?.length
     }
     else {
@@ -60,7 +60,7 @@ export default function useAuth() {
 
     const { roles } = userStore.userInfo
     const set = new Set(val) // 去重
-    const containsAll = [...set].every(v1 => !!roles.filter(role => match(v1, role)).length)
+    const containsAll = [...set].every(v1 => !!roles.filter(role => match(v1, role) || match(role, v1)).length)
     return containsAll
   }
 
@@ -76,10 +76,10 @@ export default function useAuth() {
 
     const { perms } = userStore.userInfo
     if (typeof (val) === 'string') {
-      return !!perms.filter(pre => match(val, pre)).length
+      return !!perms.filter(pre => match(val, pre) || match(pre, val)).length
     }
     else if (Array.isArray(val)) {
-      const arr = perms.filter(per => !!val.filter(v1 => match(v1, per)).length)
+      const arr = perms.filter(per => !!val.filter(v1 => match(v1, per) || match(per, v1)).length)
       return !!arr?.length
     }
     else {
@@ -106,7 +106,7 @@ export default function useAuth() {
 
     const { perms } = userStore.userInfo
     const set = new Set(val) // 去重
-    const containsAll = [...set].every(v1 => !!perms.filter(pre => match(v1, pre)).length)
+    const containsAll = [...set].every(v1 => !!perms.filter(pre => match(v1, pre) || match(pre, v1)).length)
     return containsAll
   }
   return {
