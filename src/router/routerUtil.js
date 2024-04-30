@@ -3,7 +3,7 @@ import { cloneDeep } from 'lodash'
 import { notFound } from '@/router/base'
 
 const { sort, foreach, forEach, listToTree } = useCutTree({ id: 'path', children: 'children', parentId: 'parentPath' })
-
+const allViews = import.meta.glob('/src/views/**/*.vue')
 /**
  * 菜单排序
  * @param {*[]} menus 菜单
@@ -114,7 +114,8 @@ function handleComponent(route, hasRole) {
     const url = route.component.endsWith('.vue')
       ? `/src/views/${route.component}`
       : `/src/views/${route.component}.vue`
-    route.component = () => import(/* @vite-ignore */url)
+    // route.component = () => import(/* @vite-ignore */url)
+    route.component = allViews[url]
   }
 }
 
