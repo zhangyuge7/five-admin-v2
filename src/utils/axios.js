@@ -1,11 +1,9 @@
 import axios from 'axios'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { FiveNProgress } from '@/utils/nprogress'
-import { useRouteStore } from '@/stores/modules/route'
 import { useUserStore } from '@/stores/modules/user'
 import { t } from '@/i18n'
 
-import router from '@/router'
 import useAuth from '@/hooks/useAuth'
 
 // 请求超时
@@ -49,9 +47,7 @@ axiosInstance.interceptors.request.use((config) => {
 
 // 响应拦截器
 axiosInstance.interceptors.response.use((res) => {
-  const routeStore = useRouteStore()
   const userStore = useUserStore()
-  const { setToken } = useAuth()
   const { data, config } = res
   // 获取请求时配置的成功消息提示类型与错误消息提示类型
   const { errorMsgType, successMsgType } = config
@@ -61,10 +57,7 @@ axiosInstance.interceptors.response.use((res) => {
     errorMessage(data[resultProp.message] || t('http.error'), errorMsgType)
     switch (code) {
       case 401:
-        setToken()
-        routeStore.$reset()
-        userStore.userInfo = null
-        router.push('/login')
+        userStore.logout(true)
         break
     }
   }
@@ -81,18 +74,13 @@ axiosInstance.interceptors.response.use((res) => {
     return Promise.reject(err)
   }
 
-  const routeStore = useRouteStore()
   const userStore = useUserStore()
-  const { setToken } = useAuth()
   const { status, statusText, data } = err.response
   let message = data[resultProp.message]
   switch (status) {
     case 401:
       message = message || t('http.error401')
-      setToken()
-      routeStore.$reset()
-      userStore.userInfo = null
-      router.push('/login')
+      userStore.logout(true)
       break
     case 403:
       message = message || t('http.error403')
