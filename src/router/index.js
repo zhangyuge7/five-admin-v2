@@ -25,7 +25,7 @@ router.beforeEach(async (to, from) => {
     /** 如果已经登录并跳转登录页，则重定向 */
     return { path: from.fullPath }
   }
-  if (WHITE_LIST.includes(to.fullPath)) {
+  if (WHITE_LIST.includes(to.path)) {
     /** 如果为白名单路由，则通过 */
     return true
   }

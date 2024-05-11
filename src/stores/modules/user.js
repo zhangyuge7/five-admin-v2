@@ -27,15 +27,15 @@ export const useUserStore = defineStore('user', () => {
     })
   }
   // 登出
-  async function logout() {
+  async function logout(skip = false) {
     try {
-      await logoutApi()
+      !skip && await logoutApi()
     }
     finally {
       const routeStore = useRouteStore()
       token.value = ''
       userInfo.value = null
-      await router.replace(`/login?replace=${router.currentRoute.value.fullPath}`)
+      await router.replace(`/login?replace=${router.currentRoute.value.path}`)
       routeStore.$reset()
     }
   }
