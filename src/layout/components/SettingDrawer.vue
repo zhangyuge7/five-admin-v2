@@ -202,7 +202,9 @@ onUnmounted(() => {
           <el-text :size="state.size">
             {{ t('appConfig.tabsStyle') }}
           </el-text>
-          <el-select v-model="appStore.appConfig.tabsType" :size="state.size" class="select" :disabled="!appStore.appConfig.isTabs">
+          <el-select v-model="appStore.appConfig.tabsType" :size="state.size" class="select" 
+          :disabled="!appStore.appConfig.isTabs"
+          :empty-values="[null, undefined]">
             <el-option
               v-for="item in tabsTypes"
               :key="item.value"
