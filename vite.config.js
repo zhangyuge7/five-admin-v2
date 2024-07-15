@@ -13,11 +13,29 @@ export default defineConfig(({ command, mode }) => {
     resolve: {
       alias,
     },
+    build: {
+      chunkSizeWarningLimit: 2500,
+      // 非大型项目，不建议分包
+      // rollupOptions: {
+      //   output: {
+      //     manualChunks(id) {
+      //       if (id.includes('node_modules'))
+      //         return id.toString().split('node_modules/.pnpm/')[1].split('/')[0].toString()
+      //     },
+      //   },
+      // },
+    },
     server: {
       open: false,
       host: true,
       port: env.VITE_APP_PORT,
       proxy: initProxy(env, mode === 'development'),
+    },
+    preview: {
+      open: false,
+      host: true,
+      port: env.VITE_APP_PORT,
+      proxy: initProxy(env, true),
     },
   }
 })
