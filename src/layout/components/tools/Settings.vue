@@ -20,7 +20,7 @@ function clickSetting() {
   >
     <div class="tools-item" @click="clickSetting">
       <el-icon :size="size">
-        <SvgIcon name="EpSetting" />
+        <SvgIcon name="AntDesignSettingOutlined" />
       </el-icon>
     </div>
   </el-tooltip>
