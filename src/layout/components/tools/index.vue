@@ -7,7 +7,7 @@ import { useAppStore } from '@/stores/modules/app'
 defineOptions({ name: 'Tools' })
 const { appConfig } = useAppStore()
 const moreRef = ref()
-const isDev = import.meta.env.MODE === 'development'
+const isDev = import.meta.env.MODE === 'development' || Boolean(import.meta.env.VITE_SHOW_SETTING)
 
 const Dark = defineAsyncComponent(() => import('./Dark.vue'))
 const Locale = defineAsyncComponent(() => import('./Locale.vue'))
