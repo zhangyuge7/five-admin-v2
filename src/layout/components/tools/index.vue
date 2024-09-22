@@ -16,6 +16,7 @@ const ElSize = defineAsyncComponent(() => import('./ElSize.vue'))
 const FullScreen = defineAsyncComponent(() => import('./FullScreen.vue'))
 const Refresh = defineAsyncComponent(() => import('./Refresh.vue'))
 const NavSearch = defineAsyncComponent(() => import('./NavSearch.vue'))
+const NotificationIcon = defineAsyncComponent(() => import('./NotificationIcon.vue'))
 const size = '18'
 
 const isUnfold = ref(false)
@@ -62,6 +63,7 @@ const toolsMaxWidth = computed(() => {
         </el-icon>
       </div>
     </div>
+    <NotificationIcon :size="size" />
     <Settings v-if="isDev" :size="size" />
     <Refresh :size="size" />
   </div>
