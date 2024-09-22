@@ -191,5 +191,14 @@ export default {
       },
       component: () => import('@/views/demo/full-screen/index.vue'),
     },
+    {
+      path: '/text-scroll-demo',
+      name: 'TextScrollDemo',
+      meta: {
+        title: '文本滚动组件',
+        icon: 'ep:user',
+      },
+      component: () => import('@/views/demo/TextScrollDemo.vue'),
+    },
   ],
 }
