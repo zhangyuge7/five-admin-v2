@@ -5,7 +5,7 @@
  * https://themusecatcher.github.io/vue-amazing-ui/guide/components/textscroll.html
  * 源码来自vue-amazing-ui， 改动：TS -> JS
  */
-import { computed, defineProps, ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { cancelRaf, rafTimeout, useResizeObserver } from '@/utils/textScrollUtil.js'
 
 const props = defineProps({
@@ -253,9 +253,9 @@ function verticalMove() {
 // 水平滚动
 .m-slider-horizontal {
   overflow: hidden;
-  box-shadow: 0px 0px 5px #d3d3d3;
+  box-shadow: 0px 0px 5px var(--el-box-shadow);
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--el-bg-color);
   .m-scroll-view {
     height: 100%;
     display: inline-flex;
@@ -264,7 +264,7 @@ function verticalMove() {
       padding-left: var(--text-gap);
       font-size: 16px;
       font-weight: 400;
-      color: rgba(0, 0, 0, 0.88);
+      // color: rgba(0, 0, 0, 0.88);
       line-height: 1.57;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -292,9 +292,9 @@ function verticalMove() {
 }
 .m-slider-vertical {
   overflow: hidden;
-  box-shadow: 0px 0px 5px #d3d3d3;
+  box-shadow: 0px 0px 5px var(--el-box-shadow);
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--el-bg-color);
   position: relative;
   .m-scroll-view {
     position: absolute;
@@ -308,7 +308,7 @@ function verticalMove() {
     .slide-text {
       font-size: 16px;
       font-weight: 400;
-      color: rgba(0, 0, 0, 0.88);
+      // color: rgba(0, 0, 0, 0.88);
       line-height: 1.57;
       overflow: hidden;
       white-space: nowrap;
