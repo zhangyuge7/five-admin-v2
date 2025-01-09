@@ -34,6 +34,9 @@ const isCollapse = computed(() => appStore.appConfig.menuIsCollapse)
 .fv-default-layout-sub-menu.el-menu--horizontal > .el-sub-menu .el-sub-menu__title:hover{
   background-color: var(--fv-sub-menu-hover-bg-color);
 }
+.fv-default-layout-sub-menu.el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title{
+  color: inherit;
+}
 </style>
 
 <style scoped>
